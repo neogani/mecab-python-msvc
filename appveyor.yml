@@ -21,16 +21,16 @@ build_script:
     - build.cmd C:\Python%PYTHON_VERSION%\python.exe setup.py bdist_wheel
     
 
-# artifacts: 
-#   - path: 'dist\*.whl'
-#     name: MeCab-Python-MSVC
-# deploy:
-#   description: 'MeCab-Python-MSVC'
-#   provider: GitHub
-#   auth_token:
-#     secure: 3dyLxnmyBTMNPbsgWOuwarwBotzIDjkf9y8vs8DoxBhYIVI2IiCDO6pNmuCadgCs
-#   artifact: MeCab-Python-MSVC    
-#   draft: false
-#   prerelease: false
-#   on:
-#     appveyor_repo_tag: true
+artifacts: 
+  - path: 'dist\*.whl'
+    name: MeCab-Python-MSVC
+deploy:
+  description: 'MeCab-Python-MSVC'
+  provider: GitHub
+  auth_token:
+    secure: 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
+  artifact: MeCab-Python-MSVC    
+  draft: false
+  prerelease: false
+  on:
+    appveyor_repo_tag: true
