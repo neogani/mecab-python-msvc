@@ -4,36 +4,8 @@ platform:
 
 
 environment:
-  matrix:
-    - PYTHON_VERSION: 27
-      ARCH: x86
-    - PYTHON_VERSION: 27-x64
-      ARCH: x64
-    - PYTHON_VERSION: 33
-      ARCH: x86
-    - PYTHON_VERSION: 33-x64
-      ARCH: x64
-      DISTUTILS_USE_SDK: "1"
-    - PYTHON_VERSION: 34
-      ARCH: x86
-    - PYTHON_VERSION: 34-x64
-      ARCH: x64
-      DISTUTILS_USE_SDK: "1"
-    - PYTHON_VERSION: 35
-      ARCH: x86
-    - PYTHON_VERSION: 35-x64
-      ARCH: x64
-    - PYTHON_VERSION: 36
-      ARCH: x86
-    - PYTHON_VERSION: 36-x64
-      ARCH: x64
-    - PYTHON_VERSION: 37
-      ARCH: x86
-    - PYTHON_VERSION: 37-x64
-      ARCH: x64
-    - PYTHON_VERSION: 38
-      ARCH: x86
-    - PYTHON_VERSION: 38-x64
+  matrix:    
+    - PYTHON_VERSION: 39-x64
       ARCH: x64
       
 build: off
